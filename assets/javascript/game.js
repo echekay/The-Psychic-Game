@@ -12,15 +12,15 @@ document.onkeyup = function(event) {
     var userGuess = event.key;
     var userGuessLower = userGuess.toLowerCase();
 
+    if (userGuessLower === computerGuess) {
+        wins++
+    }
+    else {
+        losses++;
+        guessesLeft--;
+    }
 
-    for (var i = 0; i < alphabet.length; i++) {
-        if (userGuessLower === alphabet[i]) {
-            wins++;
-        } else {
-            losses++;
-            guessesLeft--;
 
-        }
         lettersGuessed.push(userGuessLower);
     }
 
