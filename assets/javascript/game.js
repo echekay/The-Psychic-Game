@@ -22,7 +22,7 @@ document.onkeyup = function(event) {
 
 
         lettersGuessed.push(userGuessLower);
-    }
+    
 
     var html =
         "<h1>The Psychic Game</h1>" +
@@ -33,5 +33,5 @@ document.onkeyup = function(event) {
         "<p>Letters Guessed: " + lettersGuessed + "</p>";
 
     document.querySelector("#psychic").innerHTML = html;
-}
 
+}
